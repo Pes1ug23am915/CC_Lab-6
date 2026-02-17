@@ -6,7 +6,6 @@ pipeline {
         stage('Build Backend Image') {
             steps {
                 sh '''
-                cd CC_Lab-6
                 docker build -t backend-app backend
                 '''
             }
